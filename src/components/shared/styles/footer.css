@@ -1,0 +1,42 @@
+.footer-home {
+	background-color: red;
+	position: fixed;
+	bottom: 0;
+	height: 10vh;
+	width: 100%;
+}
+
+.footer_up {
+	height: 5vh;
+	position: absolute;
+}
+
+.footer-img {
+	width: 40px;
+
+	aspect-ratio: 1;
+	position: relative;
+	left: 50%;
+	top: 30%;
+
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes rotate {
+	from {
+		transform: scale(1), rotate(0deg);
+		-webkit-transform: scale(1), rotate(0deg);
+		-moz-transform: scale(1), rotate(0deg);
+		-ms-transform: scale(1), rotate(0deg);
+		-o-transform: scale(1), rotate(0deg);
+	}
+	to {
+		transform: scale(1.2) rotate(90deg);
+		-webkit-transform: scale(1.2), rotate(90deg);
+		-moz-transform: scale(1.2), rotate(90deg);
+		-ms-transform: scale(1.2), rotate(90deg);
+		-o-transform: scale(1.2) rotate(90deg);
+	}
+}

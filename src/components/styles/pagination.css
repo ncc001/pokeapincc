@@ -1,0 +1,63 @@
+.paginations {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	text-align: center;
+}
+
+.numberPages {
+	display: flex;
+	cursor: pointer;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 20px 0;
+	gap: 20px;
+	font-size: 10px;
+}
+
+.numberPages li,
+.btn-pages,
+.numberpages__actual {
+	border: 1px solid;
+	padding: 5px 8px;
+	color: #fbae3c;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	font-size: 15px;
+	text-shadow: 1px 1px 0.5px black;
+	transition: transform 200ms ease;
+	-webkit-transition: transform 200ms ease;
+	-moz-transition: transform 200ms ease;
+	-ms-transition: transform 200ms ease;
+	-o-transition: transform 200ms ease;
+	outline: none;
+}
+
+.numberPages li:hover,
+.btn-pages:hover,
+.numberpages__actual:hover {
+	transform: scale(1.15);
+	transition: transform 200ms ease;
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	outline: none;
+}
+.numberpages__actual {
+	font-size: 20px;
+	color: grey;
+	display: block;
+}
+
+.active-page {
+	color: gray;
+	outline: none;
+}
