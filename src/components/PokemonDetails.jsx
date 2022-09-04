@@ -17,7 +17,7 @@ const PokemonDetails = () => {
 			.then((res) => setPokeInfo(res.data))
 			.catch((err) => console.log(err));
 	}, []);
-	console.log(pokeInfo);
+
 	return (
 		<header>
 			<Header />
