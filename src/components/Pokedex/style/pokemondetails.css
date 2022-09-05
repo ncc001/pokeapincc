@@ -33,7 +33,10 @@
 }
 .card__info-container {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+	margin-bottom: 20px;
 }
 
 .card__list-typed,
@@ -42,7 +45,7 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
 	justify-content: center;
-	max-width: 400px;
+
 	margin: 0 auto;
 }
 .card__list__title,
@@ -56,21 +59,13 @@
 .ability {
 	font-weight: 700;
 	text-transform: capitalize;
-	font-size: 20px;
+	font-size: 14px;
 	color: white;
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.ability {
-	font-weight: 700;
-	text-transform: capitalize;
-	font-size: 20px;
-	color: white;
-	padding: 10px;
-	display: flex;
+	margin: 0 auto;
 }
 
 .card__footerd {
